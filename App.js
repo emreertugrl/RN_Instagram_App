@@ -3,24 +3,24 @@ import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import Screen from './src/Screen';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 // create a component
 const App = () => {
   return (
-    <NavigationContainer>
-      <Text>selam</Text>
-      <Screen />
-    </NavigationContainer>
+    <SafeAreaView style={{flex: 1}}>
+      <NavigationContainer>
+        <Screen />
+      </NavigationContainer>
+    </SafeAreaView>
   );
 };
 
 // define your styles
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#2c3e50',
+  container: {},
+  color: {
+    color: 'black',
   },
 });
 
