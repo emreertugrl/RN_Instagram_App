@@ -1,14 +1,20 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import Header from './components/Header';
 
 const index = () => {
   return (
-    <View>
-      <Text>index</Text>
+    <View style={styles.container}>
+      <Header />
     </View>
   );
 };
 
 export default index;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+});

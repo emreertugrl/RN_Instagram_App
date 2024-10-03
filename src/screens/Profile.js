@@ -4,11 +4,15 @@ import React from 'react';
 const Profile = () => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text style={styles.color}>Profile</Text>
     </View>
   );
 };
 
 export default Profile;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  color: {
+    color: 'black',
+  },
+});

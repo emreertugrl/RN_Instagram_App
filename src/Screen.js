@@ -15,7 +15,7 @@ import {
   SearchField,
   Shop,
   ShopField,
-} from './icon';
+} from './Icon';
 
 const Tab = createBottomTabNavigator();
 
